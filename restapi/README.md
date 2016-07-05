@@ -1,0 +1,1 @@
+Dockerfile install gunicorn or uwgsy, but in dev run django server

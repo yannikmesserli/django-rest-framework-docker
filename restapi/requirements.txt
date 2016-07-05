@@ -1,0 +1,17 @@
+Django
+gunicorn
+psycopg2
+PyYAML
+djangorestframework
+docker-py
+dockerpty
+docopt
+requests
+six
+texttable
+websocket-client
+django_forms_bootstrap
+dj_static
+django-oauth-toolkit
+django-cors-headers
+django-allauth

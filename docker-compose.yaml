@@ -1,0 +1,23 @@
+database:
+    restart: always
+    image: postgres:latest
+    volumes:
+        - pgdata:/var/lib/postgresql/data/
+    environment:
+        POSTGRES_USER: django
+restapi:
+    build: ./restapi
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+        - ./restapi:/django
+    ports:
+        - "8000:8000"
+    links:
+        - database
+    environment:
+        DEBUG: "true"
+        DATABASE_NAME: django 
+        DATABASE_USER: django
+        DATABASE_PASSWORD: django
+        DATABASE_SERVICE_HOST: database
+
