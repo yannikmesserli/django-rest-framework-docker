@@ -1,6 +1,6 @@
 Django
 gunicorn
-psycopg2
+psycopg2-binary
 PyYAML
 djangorestframework
 docker-py
@@ -15,3 +15,4 @@ dj_static
 django-oauth-toolkit
 django-cors-headers
 django-allauth
+django-compressor
