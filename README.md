@@ -1,5 +1,7 @@
 # My DRF Skeleton with Docker
 
+Test
+
 My own Django project skeleton with Django Rest framework ready for Docker.
 
 # Quickstart in Development
